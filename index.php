@@ -11,8 +11,8 @@
 
             <!--  titre LOVELINE -->
 
-
-
+            <!-- background-img -->
+            
 
 
 
@@ -23,7 +23,7 @@
         <!--------------------------------------------------------------------------------------------------------------------------------------->
             <form method="post" action="lovers.php">
                 <label for="lastname">Nom : </label>
-                <input type="text" id="lastname" name="lastname">
+                <input type="text" id="lastname" name="lastname" required>
                 <label for="firstname">Prénom : </label>
                 <input type="text" id="firstname" name="firstname">
                 <label for="age">Age : </label>
@@ -39,7 +39,7 @@
                 <input type="file" id="img" name="img">
                 <label for="description">Description : </label>
                 <textarea id="description" name="description"></textarea>
-                <input type="submit" value="Rencontrer nos célibataires">
+                <input type="submit" name="bouton" value="Rencontrer nos célibataires">
             </form>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

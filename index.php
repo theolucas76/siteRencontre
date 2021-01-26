@@ -11,7 +11,7 @@
     <link rel="icon" href="assets/img/logo.ico" />
 </head>
 
-<body>
+<body class="background">
     <!-- <?php //include("index_controller.php");
             ?> -->
     <div class="row m-0 p-0">
@@ -28,12 +28,11 @@
         <!--------------------------------------------------------------------------------------------------------------------------------------->
         <!-------------------------------------------------------FORMULAIRE---------------------------------------------------------------------->
         <!--------------------------------------------------------------------------------------------------------------------------------------->
-        <div class="container-fluid bg-light">
-        <div class="row">
+        <div class="container-fluid p-5">
+        <div class="row text-white">
             <header class="col text-center">
-                <img src="assets/img/logowhite.png"
-							alt="logo Love Line">
-                <h1>LOVE LINE</h1>
+                <img src="assets/img/logowhite.png" id="logo" alt="logo Love Line">
+                <h1 class="mb-5">LOVE LINE</h1>
                 <h2 class="mb-5">Bienvenue sur votre site de rencontre en ligne </h2>
             </header>
             <form>
@@ -41,22 +40,20 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="lastname" class="mb-3">Votre nom</label>
-                            <input type="lastname" class="form-control" id="lastname" placeholder="Ex. Dupont">
+                            <input type="lastname" class="form-control" id="lastname">
                         </div>
 
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="firstname" class="mb-3">Votre prénom </label>
-                            <input type="firstname" id="firstname" class="form-control" name="firstname"
-                                placeholder="Ex. Marie">
+                            <input type="firstname" id="firstname" class="form-control" name="firstname">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="email" class="mb-3">Votre adresse mail </label>
-                            <input type="email" id="email" class="form-control" name="email"
-                                placeholder="Ex. mdupont@gmail.com">
+                            <input type="email" id="email" class="form-control" name="email">
                         </div>
                     </div>
                 </div>
@@ -64,14 +61,14 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="age" class="mb-3">Votre age</label>
-                            <input type="number" class="form-control" id="age" placeholder="Ex. 27">
+                            <input type="number" class="form-control" id="age">
                         </div>
 
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="zipCode" class="mb-3">Votre code postale </label>
-                            <input type="number" id="zipCode" class="form-control" name="zipCode" placeholder="76000">
+                            <input type="number" id="zipCode" class="form-control" name="zipCode">
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -88,7 +85,7 @@
                             <label for="female">Femme</label>
                             <input type="radio" id="female" name="female" value="Femme" checked>
                             <label for="male">Homme</label>
-                            <input type="radio" id="male" name="male" value="Homme">
+                            <input type="radio" id="checked" name="female" value="Homme">
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -97,12 +94,12 @@
                             <label for="female">Femme</label>
                             <input type="radio" id="female" name="female" value="Femme">
                             <label for="male">homme</label>
-                            <input type="radio" id="male" name="male" value="Homme" checked>
+                            <input type="radio" id="checked" name="male" value="Homme" checked>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex justify-content-center">
-                        <div class="button">
-                            <button type="submit" name="submit">Valider votre profil</button>
+                        <div class="button text-white">
+                            <button type="submit" name="submit" id="submit">Valider votre profil</button>
                         </div>
                     </div>
 

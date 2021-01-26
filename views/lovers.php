@@ -25,7 +25,7 @@
                 <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <span class="nav-link">Hello <?= $_COOKIE['lastname']?>  </span>
+                            <span class="nav-link">Hello   </span>
                         </li>
                         <li class="nav-item">
                             <a href="lovers.php" class="nav-link">coucou </a>
@@ -36,8 +36,10 @@
                     </ul>
                 </div>
             </nav>
-            <!-- card -->
-            <?= $_FILES['profilPicture']?>
+
+
+
+            <!-- card 
             <div class="row">
                 <div class="col-md-3">
                     <div class="card">
@@ -51,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
 
 

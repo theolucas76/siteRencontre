@@ -23,19 +23,19 @@
                 <h1 class="mb-5">LOVE LINE</h1>
                 <h2 class="mb-5">Bienvenue sur votre site de rencontre en ligne </h2>
             </header>
-            <form method="post" action="views/lovers.php">
+            <form method="post" action="views/lovers.php" enctype="multipart/form-data">
                 <div class="row mb-5">
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="lastname" class="mb-3">Votre nom</label>
-                            <input type="lastname" class="form-control" id="lastname">
+                            <input type="text" class="form-control" id="lastname" name="lastname">
                         </div>
 
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="firstname" class="mb-3">Votre prénom </label>
-                            <input type="firstname" id="firstname" class="form-control" name="firstname">
+                            <input type="text" id="firstname" class="form-control" name="firstname">
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -49,7 +49,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="age" class="mb-3">Votre age</label>
-                            <input type="number" class="form-control" id="age">
+                            <input type="number" class="form-control" id="age" name="age">
                         </div>
 
                     </div>
@@ -82,12 +82,12 @@
                             <label for="female">Femme</label>
                             <input type="radio" id="female" name="search" value="Femme">
                             <label for="male">homme</label>
-                            <input type="radio" id="checked" name="male" value="Homme" checked>
+                            <input type="radio" id="male" name="search" value="Homme" checked>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex justify-content-center">
                         <div class="button text-white">
-                            <button type="submit" name="submit" id="submit">Valider votre profil</button>
+                            <input type="submit" name="btnSubmit" id="btnSubmit" value="Valider votre profil">
                         </div>
                     </div>
                 </div>

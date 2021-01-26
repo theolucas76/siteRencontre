@@ -4,26 +4,28 @@
         <meta charset="UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bienvenue sur LOVE LINE</title>
     </head>
     <body>
-       <!-- <?php //include("index_controller.php");?> -->
-        <div class="row m-0 p-0">
+      <?php include("controllers/index_controller.php");?>
+        <div class="container m-0 p-0">
 
             <!--  titre LOVELINE -->
 
             <!-- background-img -->
-            
-
-
-
-
-
+        <div class="row">
+            <ul>
+                <li><a href="index.php">accueil</a></li>
+                <li><a href="views/user.php">user</a></li>
+                <li><a href="views/lovers.php">lovers</a></li>
+            </ul>
+        </div>
         <!--------------------------------------------------------------------------------------------------------------------------------------->
         <!-------------------------------------------------------FORMULAIRE---------------------------------------------------------------------->
         <!--------------------------------------------------------------------------------------------------------------------------------------->
-            <form method="post" action="lovers.php">
+            <form method="post" action="views/lovers.php">
                 <label for="lastname">Nom : </label>
-                <input type="text" id="lastname" name="lastname" required>
+                <input type="text" id="lastname" name="lastname" value="<?= $_COOKIE['lastname']?>" required>
                 <label for="firstname">Prénom : </label>
                 <input type="text" id="firstname" name="firstname">
                 <label for="age">Age : </label>
@@ -39,9 +41,10 @@
                 <input type="file" id="img" name="img">
                 <label for="description">Description : </label>
                 <textarea id="description" name="description"></textarea>
-                <input type="submit" name="bouton" value="Rencontrer nos célibataires">
+                <input type="submit" name="btnSubmit" value="Rencontrer nos célibataires">
             </form>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
     </body>
 </html>

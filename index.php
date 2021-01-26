@@ -11,31 +11,19 @@
     <link rel="icon" href="assets/img/logo.ico" />
 </head>
 
-<body class="background">
-    <!-- <?php //include("index_controller.php");
-            ?> -->
-    <div class="row m-0 p-0">
-
-        <!--  titre LOVELINE -->
-
-        <!-- background-img -->
-
-
-
-
-
-
+<body>
+    <?php include("controllers/index_controller.php");?> 
         <!--------------------------------------------------------------------------------------------------------------------------------------->
         <!-------------------------------------------------------FORMULAIRE---------------------------------------------------------------------->
         <!--------------------------------------------------------------------------------------------------------------------------------------->
-        <div class="container-fluid p-5">
-        <div class="row text-white">
+    <div class="container-fluid" class="background">
+        <div class="row">
             <header class="col text-center">
                 <img src="assets/img/logowhite.png" id="logo" alt="logo Love Line">
                 <h1 class="mb-5">LOVE LINE</h1>
                 <h2 class="mb-5">Bienvenue sur votre site de rencontre en ligne </h2>
             </header>
-            <form>
+            <form method="post" action="views/lovers.php">
                 <div class="row mb-5">
                     <div class="col-md-4">
                         <div class="form-group">
@@ -68,13 +56,13 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="zipCode" class="mb-3">Votre code postale </label>
-                            <input type="number" id="zipCode" class="form-control" name="zipCode">
+                            <input type="number" id="zipCode" class="form-control" name="zipCode" placeholder="76000" required>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="profilPicture" class="mb-3">Votre photo de profil </label>
-                            <input type="file" id="profilPicture" class="form-control" name="profilPicture">
+                            <input type="file" id="profilPicture" class="form-control" name="profilPicture" required>
                         </div>
                     </div>
                 </div>
@@ -83,16 +71,16 @@
                         <p>Vous êtes</p>
                         <div class="form-group">
                             <label for="female">Femme</label>
-                            <input type="radio" id="female" name="female" value="Femme" checked>
+                            <input type="radio" id="female" name="gender" value="Femme" checked required>
                             <label for="male">Homme</label>
-                            <input type="radio" id="checked" name="female" value="Homme">
+                            <input type="radio" id="male" name="gender" value="Homme">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <p>Vous recherchez</p>
                         <div class="form-group">
                             <label for="female">Femme</label>
-                            <input type="radio" id="female" name="female" value="Femme">
+                            <input type="radio" id="female" name="search" value="Femme">
                             <label for="male">homme</label>
                             <input type="radio" id="checked" name="male" value="Homme" checked>
                         </div>
@@ -102,10 +90,13 @@
                             <button type="submit" name="submit" id="submit">Valider votre profil</button>
                         </div>
                     </div>
-
-
                 </div>
             </form>
+        </div>
+        <footer class="container-fluid mt-5">
+            <p class="text-center">© Théo lucas & Nora Charef La Manu 2020  <a href="#">mentions légales</a></p>
+        </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>

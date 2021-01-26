@@ -16,7 +16,7 @@
         <!--------------------------------------------------------------------------------------------------------------------------------------->
         <!-------------------------------------------------------FORMULAIRE---------------------------------------------------------------------->
         <!--------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="container-fluid" class="background">
+    <div class="container-fluid background vh-100">
         <div class="row">
             <header class="col text-center">
                 <img src="assets/img/logowhite.png" id="logo" alt="logo Love Line">
@@ -93,7 +93,7 @@
                 </div>
             </form>
         </div>
-        <footer class="container-fluid mt-5">
+        <footer class="mt-5">
             <p class="text-center">© Théo lucas & Nora Charef La Manu 2020  <a href="#">mentions légales</a></p>
         </footer>
     </div>

@@ -8,7 +8,7 @@
         setcookie('zipCode', $_POST['zipCode'], time() + 86400);
         setcookie('email', $_POST['email'], time()+86400);
         setcookie('search', $_POST['search'], time()+86400);
-        move_uploaded_file($_FILES['profilPicture']['tmp_name'], 'assets/img/' . basename($_FILES['profilPicture']['name']));
+       
         setcookie('profilPicture', $_FILES['profilPicture'], time()+86400);
     
 

@@ -37,10 +37,25 @@
                 </div>
             </nav>
             <!-- card -->
-
+            <?= $_FILES['profilPicture']?>
             <div class="row">
-                
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Jacky 30 ans</h5>
+                            <p class="card-text">Description de jacky</p> 
+                        </div>
+                        <div class="card-footer">
+                            <button class="danger" value="Like">Like</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
+
+
         </div>
        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

@@ -25,13 +25,13 @@
                 <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <span class="nav-link">Hello   </span>
+                            <span class="nav-link">Hello  <?= $_COOKIE['lastname']?> </span>
                         </li>
                         <li class="nav-item">
-                            <a href="lovers.php" class="nav-link">coucou </a>
+                            <a href="lovers.php" class="nav-link">Nos Lovers</a>
                         </li>
                         <li class="nav-item">
-                            <a href="user.php" class="nav-link">l'hibou</a>
+                            <a href="user.php" class="nav-link">Profil</a>
                         </li>
                     </ul>
                 </div>

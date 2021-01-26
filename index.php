@@ -28,20 +28,20 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="lastname" class="mb-3">Votre nom</label>
-                            <input type="text" class="form-control" id="lastname" name="lastname">
+                            <input type="text" class="form-control" id="lastname" name="lastname" required>
                         </div>
 
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="firstname" class="mb-3">Votre prénom </label>
-                            <input type="text" id="firstname" class="form-control" name="firstname">
+                            <input type="text" id="firstname" class="form-control" name="firstname" required>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="email" class="mb-3">Votre adresse mail </label>
-                            <input type="email" id="email" class="form-control" name="email">
+                            <input type="email" id="email" class="form-control" name="email" required>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="age" class="mb-3">Votre age</label>
-                            <input type="number" class="form-control" id="age" name="age">
+                            <input type="number" class="form-control" id="age" name="age" required>
                         </div>
 
                     </div>
@@ -82,12 +82,12 @@
                             <label for="female">Femme</label>
                             <input type="radio" id="female" name="search" value="Femme">
                             <label for="male">homme</label>
-                            <input type="radio" id="male" name="search" value="Homme" checked>
+                            <input type="radio" id="male" name="search" value="Homme" checked required>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex justify-content-center">
                         <div class="button text-white">
-                            <input type="submit" name="btnSubmit" id="btnSubmit" value="Valider votre profil">
+                            <input type="submit" name="btnSubmit" id="submit" value="Valider votre profil">
                         </div>
                     </div>
                 </div>

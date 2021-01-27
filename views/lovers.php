@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <?php include("../controllers/lovers_controller.php");?>
+        
         <!-- nav bar-->
         <div class="container m-0 p-0">
             <nav class="navbar navbar-expand-sm">
@@ -37,7 +37,7 @@
                 </div>
             </nav>
 
-
+            <?php include("../controllers/lovers_controller.php");?>
 
             <!-- card 
             <div class="row">

@@ -4,46 +4,60 @@
         <meta charset="UTF-8">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/logo.ico" />
+        <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/img/logo.ico" />
     </head>
     <body>
-    <div class="container-fluid background" id="gradient-bg">
-        <div class="row m-0">
-            <div class="col-md-6">
-                <img src="../assets/img/couple1.png" class="d-block align-items-left w-100 m-0" alt="photo d'un couple">
-            
-                <!-- nav bar-->
-        
-                <nav class="navbar navbar-expand-sm">
-                <a class="navbar-brand" href="#">
-                        <img src="assets/" alt="">
-                </a>
-                    <button class="navbar-toggler bg-dark" 
-                            type="button" 
-                            data-bs-toggle="collapse" 
-                            data-bs-target="#navbarNav" 
-                            aria-controls="#navbarNav" 
-                            aria-expanded="false" 
-                            aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <span class="nav-link">Hello  <?= $_COOKIE['lastname']?> </span>
-                            </li>
-                            <li class="nav-item">
-                                <a href="lovers.php" class="nav-link">Nos Lovers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="user.php" class="nav-link">Profil</a>
-                            </li>
-                        </ul>
+    <div class="container-fluid m-0 p-0 vw-100" id="gradient-bg">
+        <div class="row m-0 p-0 vw-100">
+            <div class="col-md-5 m-0 p-0">
+                <img src="../assets/img/couple1.png" class="d-block align-items-left w-100" alt="photo d'un couple">
+            </div>
+            <div class="col-md-7">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#about1">Bienvenue user</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#ourcard">Votre profil</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
+                <div>
+                    <h2 class="text-center text-white mt-5 mb-5">Nos célibataires</h2>
+
+                    <div class="row d-flex justify-content-center my-3 text-white text-center" id="menProfiles">
+                        <div class="col-lg-4">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <?php include("../controllers/lovers_controller.php");?>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-                            <?php include("../controllers/lovers_controller.php");?>
+
         </div>
     </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

@@ -16,14 +16,14 @@
         <!--------------------------------------------------------------------------------------------------------------------------------------->
         <!-------------------------------------------------------FORMULAIRE---------------------------------------------------------------------->
         <!--------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="container-fluid background vh-100">
+    <div id="gradient-bg" class="container-fluid text-white p-5">
         <div class="row">
             <header class="col text-center">
                 <img src="assets/img/logowhite.png" id="logo" alt="logo Love Line">
-                <h1 class="mb-5">LOVE LINE</h1>
+                <h1>LOVE LINE</h1>
                 <h2 class="mb-5">Bienvenue sur votre site de rencontre en ligne </h2>
             </header>
-            <form method="post" action="views/lovers.php" enctype="multipart/form-data">
+            <form method="post" action="views/lovers.php" enctype="multipart/form-data" class="p-5 border border-white">
                 <div class="row mb-5">
                     <div class="col-md-4">
                         <div class="form-group">
@@ -71,7 +71,7 @@
                         <p>Vous êtes</p>
                         <div class="form-group">
                             <label for="female">Femme</label>
-                            <input type="radio" id="female" name="gender" value="Femme" checked required>
+                            <input type="radio" id="female" name="gender" value="Femme" required>
                             <label for="male">Homme</label>
                             <input type="radio" id="male" name="gender" value="Homme">
                         </div>
@@ -82,12 +82,12 @@
                             <label for="female">Femme</label>
                             <input type="radio" id="female" name="search" value="Femme">
                             <label for="male">homme</label>
-                            <input type="radio" id="male" name="search" value="Homme" checked required>
+                            <input type="radio" id="male" name="search" value="Homme" required>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex justify-content-center">
                         <div class="button text-white">
-                            <input type="submit" name="btnSubmit" id="submit" value="Valider votre profil">
+                            <input type="submit" class="btn btn-outline-light" name="btnSubmit" id="submit" value="Valider votre profil">
                         </div>
                     </div>
                 </div>

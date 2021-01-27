@@ -50,7 +50,6 @@
                         <div class="form-group">
                             <label for="age" class="mb-3">Votre age</label>
                             <input type="text" class="form-control" id="age" name="age" required>
-                            <span style="color: darkred;" id="errorAge"></span>
                         </div>
 
                     </div>

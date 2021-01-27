@@ -53,16 +53,16 @@
    ];
 
    $loversFemme = [
-          ['lastname' => 'jackye', 'firstname' => 'jackI1', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg1.png', 'description' => 'Je suis homme nommé Jacky'],
-          ['lastname' => 'jackye', 'firstname' => 'jackI2', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg2.png', 'description' => 'Je suis homme nommé Jacky'],
-          ['lastname' => 'jackye', 'firstname' => 'jackI3', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg3.png', 'description' => 'Je suis homme nommé Jacky'],
-          ['lastname' => 'jacky', 'firstname' => 'jackI4', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg4.png', 'description' => 'Je suis homme nommé Jacky'],
-          ['lastname' => 'jacky', 'firstname' => 'jackI5', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg5.png', 'description' => 'Je suis homme nommé Jacky'],
-          ['lastname' => 'jacky', 'firstname' => 'jackI6', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg6.png', 'description' => 'Je suis homme nommé Jacky'],
-          ['lastname' => 'jacky', 'firstname' => 'jackI7', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg7.png', 'description' => 'Je suis homme nommé Jacky'],
-          ['lastname' => 'jacky', 'firstname' => 'jackI8', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg8.png', 'description' => 'Je suis homme nommé Jacky'],
-          ['lastname' => 'jacky', 'firstname' => 'jackI9', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg9.png', 'description' => 'Je suis homme nommé Jacky'],
-          ['lastname' => 'jacky', 'firstname' => 'jackI10', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg10.png', 'description' => 'Je suis homme nommé Jacky']
+          ['lastname' => 'Zeublouse', 'firstname' => 'Agathe', 'age' => '24', 'gender' => 'Femme', 'email' => 'agathezeublouse@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg1.png', 'description' => 'Fan de musique, j\'aime plusieurs style mais le blues me suivra toute ma  vie'],
+          ['lastname' => 'Kepoura', 'firstname' => 'Adrienne', 'age' => '30', 'gender' => 'Femme', 'email' => 'adriennekepoura@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg2.png', 'description' => 'Je suis une femme sans pression, je vis au jours le jours'],
+          ['lastname' => 'Du Rine', 'firstname' => 'Anna-lise', 'age' => '26', 'gender' => 'Femme', 'email' => 'annalisedurine@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg3.png', 'description' => 'Je travaille dans un laboratoire d\'analyse, ceci est ma destiné, en feras-tu partie ?'],
+          ['lastname' => 'Rable', 'firstname' => 'Daisy', 'age' => '35', 'gender' => 'Femme', 'email' => 'daisyrable@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg4.png', 'description' => 'Je suis Daisy Rable. Drop the mic'],
+          ['lastname' => 'Sion', 'firstname' => 'Eva', 'age' => '27', 'gender' => 'Femme', 'email' => 'evasion@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg5.png', 'description' => 'J\'ai toujours été à la recherche d\'évasion, si toi aussi tu l\'es, nous sommes fait l\'un pour l\'autre'],
+          ['lastname' => 'Arepassé', 'firstname' => 'Jennifer', 'age' => '29', 'gender' => 'Femme', 'email' => 'jenniferarepassé@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg6.png', 'description' => 'Si je me fais froisé, je vais repassé'],
+          ['lastname' => 'Age', 'firstname' => 'Marie', 'age' => '40', 'gender' => 'Femme', 'email' => 'marieage@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg7.png', 'description' => 'Je suis ici pour trouver l\'homme de ma vie'],
+          ['lastname' => 'Roïd', 'firstname' => 'Paula', 'age' => '25', 'gender' => 'Femme', 'email' => 'paularoid@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg8.png', 'description' => 'Photographe, je sui fan de photographie depuis ma plus tendre enfance'],
+          ['lastname' => 'Croche', 'firstname' => 'Sacha', 'age' => '33', 'gender' => 'Femme', 'email' => 'sarahcroche@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg9.png', 'description' => 'Je ne suis pas joignable par téléphone, je n\'aime pas ce genre de technologie.'],
+          ['lastname' => 'Louest', 'firstname' => 'Théa', 'age' => '25', 'gender' => 'Femme', 'email' => 'théalouest@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppg10.png', 'description' => 'Je suis à la recherche d\'anciennes connaissances pour retrouver mes copains de maternelle #copainsd\'avant']
    ];
      //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
      /////////////////////////////////////////////////////////////LOVERS FEMME/////////////////////////////////////////////////////////////////////
@@ -172,6 +172,7 @@
                     </div>
                </div>
                <?php }?>
+               <!----------------------------------------------------modal---------------------------------------------------------------------->
                <div class="modal fade" id="<?=$firstname?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog text-white" role="document">

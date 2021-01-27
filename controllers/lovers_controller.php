@@ -17,7 +17,7 @@
    }
    
    $loversHomme = [
-        ['lastname' => 'jacky1', 'firstname' => 'jack', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'jacky.png', 'description' => 'Je suis homme nommé Jacky'],
+        ['lastname' => 'jacky1', 'firstname' => 'jack', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb1.png', 'description' => 'Je suis homme nommé Jacky'],
         ['lastname' => 'jacky2', 'firstname' => 'jack', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'jacky.png', 'description' => 'Je suis homme nommé Jacky'],
         ['lastname' => 'jacky3', 'firstname' => 'jack', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'jacky.png', 'description' => 'Je suis homme nommé Jacky'],
         ['lastname' => 'jacky', 'firstname' => 'jack', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'jacky.png', 'description' => 'Je suis homme nommé Jacky'],
@@ -59,18 +59,42 @@
                     <?php*/
                }
           }
-   }elseif($_COOKIE['search'] == 'Homme'){
-          foreach($loversHomme as $order => $value){
-               echo '<div class="card">';
-               foreach($value as $key => $infos){ 
-                    if($key == 'picture'){ echo '<img src="../assets/img/' .$infos .'" alt="photo de profil" class="card-img-top">';}
-                    if($key == 'firstname'){ echo '<div class="card-body"><h5 class="card-title">'. $infos;}
-                    if($key == 'age'){echo '  '.$infos.'</h5></div>';}
-               }
-               echo '</div>';
-          }
-   }
+   }elseif($_COOKIE['search'] == 'Homme'){?>
+               <div class="row justify-content-center my-3" id="menProfiles">
+                <div class="col-lg-4">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+          
+          <?php 
+          foreach($loversHomme as $key => $infos){
+               $photo = $infos['picture'];
+               $lastname = $infos['lastname'];
+               $firstname = $infos['firstname'];
+               $age = $infos['age'];?>
+               
+               <div class="carousel-item">
+                    <img src="../assets/img/<?= $photo ?>" class=" carouselImage d-block w-100">
+               </div>
 
-   
-  
+
+
+     <?php } ?>
+     </div>
+                    </div>
+                </div>
+            </div>
+               </div>
+               <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+               data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+               data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+               </a>
+          </div>
+<?php
+   }
 ?>

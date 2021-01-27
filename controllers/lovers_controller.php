@@ -44,7 +44,9 @@
         ['lastname' => 'Aymard', 'firstname' => 'Jean', 'age' => '36', 'gender' => 'Homme', 'email' => 'jean-aymard@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb7.png', 'description' => 'Jean-Aymard de créer des profils'],
 
         ['lastname' => 'Monslip', 'firstname' => 'Jean-phil', 'age' => '60', 'gender' => 'Homme', 'email' => 'jeanphilmonslip@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb8.png', 'description' => 'stop les clichés j\'aime les caleçons aussi'],
-        ['lastname' => 'Affrite', 'Barack' => 'jack', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb9.png', 'description' => 'Je suis homme nommé Jacky'],
+
+        ['lastname' => 'Affrite', 'firstname' => 'Barack', 'age' => '30', 'gender' => 'Homme', 'email' => 'barackaffrite@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb9.png', 'description' => 'Vendeur de frite mondialement connu, venez dégusté nos frites chez Barack Affrite'],
+
         ['lastname' => 'jacky', 'firstname' => 'jack', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb10.png', 'description' => 'Je suis homme nommé Jacky']
    ];
 
@@ -69,7 +71,10 @@
                $lastname = $infos['lastname'];
                $firstname = $infos['firstname'];
                $age = $infos['age'];
-               $zipCode = $infos['zipcode'];?>
+               $zipCode = $infos['zipcode'];
+               $description = $infos['description'];
+               ?>
+               
                <?php
                if($key == 0){?>
                     <div class="carousel-item active">
@@ -105,17 +110,21 @@
                                              <img src="../assets/img/<?=$photo?>" class="d-block w-100">
                                         </div>
                                         <div class="col-md-6">
-                                             <img src="assets/img/.png" class="d-block w-100">
+                                             <img src="../assets/img/user.png" class="w-100">
                                              <p><?= $firstname ?>, <?= $age ?> ans</p>
                                              <div class="row">
-                                                  <div class="col-2">
-                                                       <img src="assets/img/.png" class="d-block w-100">
+                                                  <div class="col-5">
+                                                       <img src="../assets/img/location.png" class="w-100">
                                                   </div>
-                                                  <div class="col-10">
+                                                  <div class="col-7">
                                                        <p><?= $zipCode ?></p>
                                                   </div>
                                              </div>
                                         </div>
+                                   </div>
+                                   <div class="row">
+                                        <h5>Description : </h5>
+                                        <p><?= $description ?></p>
                                    </div>
                                    <div class="d-flex justify-content-middle p-5">
                                    <button type="button" class="btn btn-outline-light" id="button" data-bs-dismiss="modal">Fermer x
@@ -136,7 +145,8 @@
                $firstname = $infos['firstname'];
                $age = $infos['age'];
                $zipCode = $infos['zipcode'];
-               
+               $description = $infos['description'];
+
                if($key == 0){?>
                     <div class="carousel-item active">
                          <img src="../assets/img/<?= $photo ?>" class=" carouselImage img-fluid d-block w-100">
@@ -170,19 +180,23 @@
                                              <img src="../assets/img/<?=$photo?>" class="d-block w-100">
                                         </div>
                                         <div class="col-md-6">
-                                             <img src="assets/img/.png" class="d-block w-100">
+                                             <img src="../assets/img/user.png" class="d-block w-100">
                                              <p><?= $firstname ?>, <?= $age ?> ans</p>
                                              <div class="row">
-                                                  <div class="col-2">
-                                                       <img src="assets/img/.png" class="d-block w-100">
+                                                  <div class="col-4">
+                                                       <img src="../assets/img/location.png" class="d-block w-100">
                                                   </div>
-                                                  <div class="col-10">
+                                                  <div class="col-8">
                                                        <p><?= $zipCode ?></p>
                                                   </div>
                                              </div>
                                         </div>
                                    </div>
-                                   <div class="d-flex justify-content-middle p-5">
+                                   <div class="row">
+                                        <h5>Description : </h5>
+                                        <p><?= $description ?></p>
+                                   </div>
+                                   <div class="d-flex justify-content-end">
                                    <button type="button" class="btn btn-outline-light" id="button" data-bs-dismiss="modal">Fermer x
                                    </button>
                                    </div>

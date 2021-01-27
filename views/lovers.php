@@ -24,7 +24,7 @@
                         <div class="collapse navbar-collapse">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#about1">Bienvenue user</a>
+                                    <a class="nav-link text-white" href="#about1">Bienvenue <?= $_COOKIE['firstname']?></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="#ourcard">Votre profil</a>

@@ -1,5 +1,5 @@
 <?php 
-    if(isset($_POST['lastname'])){
+    if(isset($_POST['btnSubmit'])){
 
         setcookie('lastname', $_POST['lastname'], time() + 86400);
         setcookie('firstname', $_POST['firstname'], time() + 86400);
@@ -12,6 +12,8 @@
         $imgProfile = $_FILES['profilPicture']['name'];
         setcookie('profilPicture', $imgProfile, time()+86400);
           header("location: lovers.php");
+   }elseif($_COOKIE['age']< 18){
+          header("location: ../index.php");
    }
    
    $loversHomme = [
@@ -37,13 +39,13 @@
 
         ['lastname' => 'Tine', 'firstname' => 'Clément', 'age' => '26', 'gender' => 'Homme', 'email' => 'clementtine@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb4.png', 'description' => 'Je me présente je m\'appelle Clément et j\adore le orange et les fruits'],
 
-        ['lastname' => 'Gole', 'firstname' => 'Henri', 'age' => '50', 'gender' => 'Homme', 'email' => 'henrigole@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb5.png', 'description' => 'Je me présente je m\'appelle Henri, j\'aime beaucoup rigolé'],
+        ['lastname' => 'Gole', 'firstname' => 'Henri', 'age' => '32', 'gender' => 'Homme', 'email' => 'henrigole@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb5.png', 'description' => 'Je me présente je m\'appelle Henri, j\'aime beaucoup rigolé'],
 
-        ['lastname' => 'Titouplein', 'firstname' => 'Jean', 'age' => '28', 'gender' => 'Homme', 'email' => 'titouplein@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb6.png', 'description' => 'Je suis quelqu\'un de très gentil'],
+        ['lastname' => 'Titouplein', 'firstname' => 'William', 'age' => '28', 'gender' => 'Homme', 'email' => 'titouplein@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb6.png', 'description' => 'Je suis quelqu\'un de très gentil'],
 
         ['lastname' => 'Aymard', 'firstname' => 'Jean', 'age' => '36', 'gender' => 'Homme', 'email' => 'jean-aymard@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb7.png', 'description' => 'Jean-Aymard de créer des profils'],
 
-        ['lastname' => 'Monslip', 'firstname' => 'Jean-phil', 'age' => '60', 'gender' => 'Homme', 'email' => 'jeanphilmonslip@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb8.png', 'description' => 'stop les clichés j\'aime les caleçons aussi'],
+        ['lastname' => 'Monslip', 'firstname' => 'Jean-phil', 'age' => '30', 'gender' => 'Homme', 'email' => 'jeanphilmonslip@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb8.png', 'description' => 'stop les clichés j\'aime les caleçons aussi'],
 
         ['lastname' => 'Affrite', 'firstname' => 'Barack', 'age' => '30', 'gender' => 'Homme', 'email' => 'barackaffrite@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb9.png', 'description' => 'Vendeur de frite mondialement connu, venez dégusté nos frites chez Barack Affrite'],
 

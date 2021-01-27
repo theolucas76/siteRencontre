@@ -23,7 +23,7 @@
                 <h1>LOVE LINE</h1>
                 <h2 class="mb-5">Bienvenue sur votre site de rencontre en ligne </h2>
             </header>
-            <form method="post" action="views/lovers.php" enctype="multipart/form-data" class="p-5 border border-white">
+            <form method="post" action="views/lovers.php" enctype="multipart/form-data" class="p-5 border border-white" name="signIn">
                 <div class="row mb-5">
                     <div class="col-md-4">
                         <div class="form-group">
@@ -49,7 +49,8 @@
                     <div class="col-md-4">
                         <div class="form-group">
                             <label for="age" class="mb-3">Votre age</label>
-                            <input type="number" class="form-control" id="age" name="age" required>
+                            <input type="text" class="form-control" id="age" name="age" required>
+                            <span style="color: darkred;" id="errorAge"></span>
                         </div>
 
                     </div>
@@ -94,11 +95,11 @@
             </form>
         </div>
         <footer class="mt-5">
-            <p class="text-center">© Théo lucas & Nora Charef La Manu 2020  <a href="#">mentions légales</a></p>
+            <p class="text-center">© Théo Lucas & Nora Charef La Manu 2020  <a href="#">mentions légales</a></p>
         </footer>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="asset/js/main.js"></script>
 </body>
 
 </html>

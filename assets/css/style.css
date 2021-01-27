@@ -13,10 +13,9 @@
 }
 
 
-.background{
-	background: #f50a6c url(../img/background.png) top center no-repeat;
+#gradient-bg{
+    background: linear-gradient(90deg, rgba(253,83,223,1) 0%, rgba(248,111,100,1) 100%);
     background-size: cover;
-    background-attachment: static;
 }
 
 label{
@@ -35,8 +34,7 @@ h2{
 }
 
 #submit{
-    background-color: #FA4E72;
-    color: white;
+
     font-family: Manrope-Regular;
     src: url("../fonts/Manrope-Regular.otf") format("truetype");
     padding-left: 35px;
@@ -44,14 +42,37 @@ h2{
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 10px;
-    border: none;
+
 }
 
 #submit:hover{
     background-color: #ff6c8c;
+    color: white;
 }
 
 #logo{
     width: 100px;
 }
+
+.carousel-item img{
+    width: 300px;
+}
+
+#button{
+
+    font-family: Manrope-Regular;
+    src: url("../fonts/Manrope-Regular.otf") format("truetype");
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+
+}
+
+#button:hover{
+    background-color: #ff6c8c;
+    color: white;
+}
+
 

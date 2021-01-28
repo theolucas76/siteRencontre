@@ -49,7 +49,7 @@
 
         ['lastname' => 'Affrite', 'firstname' => 'Barack', 'age' => '30', 'gender' => 'Homme', 'email' => 'barackaffrite@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb9.png', 'description' => 'Vendeur de frite mondialement connu, venez dégusté nos frites chez Barack Affrite'],
 
-        ['lastname' => 'jacky', 'firstname' => 'jack', 'age' => '30', 'gender' => 'Homme', 'email' => 'jackylover@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb10.png', 'description' => 'Je suis homme nommé Jacky']
+        ['lastname' => 'Martin', 'firstname' => 'Pierre', 'age' => '30', 'gender' => 'Homme', 'email' => 'pierremartin@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb10.png', 'description' => 'Je suis homme nommé Jacky']
    ];
 
    $loversFemme = [
@@ -75,6 +75,7 @@
                $age = $infos['age'];
                $zipCode = $infos['zipcode'];
                $description = $infos['description'];
+               $btn = 0;
                ?>
                
                <?php
@@ -128,8 +129,8 @@
                                         <h5>Description : </h5>
                                         <p><?= $description ?></p>
                                    </div>
-                                   <div class="d-flex justify-content-middle p-5">
-                                   <button type="button" class="btn btn-outline-light" id="button" data-bs-dismiss="modal">Fermer x
+                                   <div class="d-flex justify-content-end">
+                                   <button type="button" class="btn btn-outline-light" id="button" onclick="changeLike();"><span id="Like">Like</span><span id="Liked" style="display: none;">Liked</span>
                                    </button>
                                    </div>
                               </div>
@@ -148,7 +149,6 @@
                $age = $infos['age'];
                $zipCode = $infos['zipcode'];
                $description = $infos['description'];
-
                if($key == 0){?>
                     <div class="carousel-item active">
                          <img src="../assets/img/<?= $photo ?>" class=" carouselImage img-fluid d-block w-100">
@@ -200,8 +200,10 @@
                                         <p><?= $description ?></p>
                                    </div>
                                    <div class="d-flex justify-content-end">
-                                   <button type="button" class="btn btn-outline-light" id="button" data-bs-dismiss="modal">Fermer x
-                                   </button>
+                                             <button type="button" class="btn btn-outline-light btnCustom"  id="btn">
+                                                  <span id="Like">Like</span>
+                                                  <span id="Liked" style="display: none;">Liked</span>
+                                             </button>
                                    </div>
                               </div>
                          </div>
@@ -211,3 +213,4 @@
 <?php
    }
 ?>
+<script src="../assets/js/main.js"></script>

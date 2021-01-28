@@ -58,7 +58,7 @@ h2{
     width: 300px;
 }
 
-#button{
+.btnCustom{
 
     font-family: Manrope-Regular;
     src: url("../fonts/Manrope-Regular.otf") format("truetype");
@@ -70,7 +70,7 @@ h2{
 
 }
 
-#button:hover{
+.btnCustom:hover{
     background-color: #ff6c8c;
     color: white;
 }

@@ -130,7 +130,7 @@
                                         <p><?= $description ?></p>
                                    </div>
                                    <div class="d-flex justify-content-end">
-                                        <span id="btnLike" class="btn btn-outline-light btnCustom">Like</span>
+                                        <span id="btnLike" class="btn btn-outline-light btnCustom">Like ♡</span>
                                    </div>
                               </div>
                          </div>
@@ -202,7 +202,7 @@
                                         <p><?= $description ?></p>
                                    </div>
                                    <div class="d-flex justify-content-end">
-                                        <span id="btnLike" class="btn btn-outline-light btnCustom">Like</span>
+                                        <span id="btnLike" class="btn btn-outline-light btnCustom">Like ♡</span>
                                    </div>
                               </div>
                          </div>

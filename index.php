@@ -10,19 +10,20 @@
         <link rel="icon" href="assets/img/logo.ico" />
     </head>
 
-    <body>
+    <body id="background" class="wh-100">
         <?php include("controllers/index_controller.php");?> 
         <!--------------------------------------------------------------------------------------------------------------------------------------->
         <!-------------------------------------------------------FORMULAIRE---------------------------------------------------------------------->
         <!--------------------------------------------------------------------------------------------------------------------------------------->
-        <div id="gradient-bg" class="container-fluid text-white p-5">
+        <div  class="container-fluid text-white justify-content-center">
             <div class="row">
-                <header class="col text-center">
+                <header class="col-12 text-center mt-3">
                     <img src="assets/img/logowhite.png" id="logo" alt="logo Love Line">
                     <h1>LOVE LINE</h1>
-                    <h2 class="mb-5">Bienvenue sur votre site de rencontre en ligne </h2>
+                    <h2 class="mb-4">Bienvenue sur votre site de rencontre en ligne </h2>
                 </header>
-                <form method="post" action="views/lovers.php" enctype="multipart/form-data" class="p-5 border border-white" name="signIn">
+                <div class="col-10 border border-white mx-auto">
+                <form method="post" action="views/lovers.php" enctype="multipart/form-data" class="p-5 " name="signIn">
                     <div class="row mb-5">
                         <div class="col-md-4">
                             <div class="form-group">
@@ -92,8 +93,8 @@
                     </div>
                 </form>
             </div>
-            <footer class="mt-5">
-                <p class="text-center text-white">© Théo Lucas & Nora Charef La Manu 2020  <a href="#">mentions légales</a></p>
+            <footer class="mt-2">
+                <p class="text-center text-white">© Théo Lucas & Nora Charef La Manu 2020  <a href="mentionslégales.html">mentions légales</a></p>
             </footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

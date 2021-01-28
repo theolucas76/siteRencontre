@@ -12,13 +12,15 @@
     src: url("../fonts/Manrope-medium.otf") format("truetype");
 }
 
-body{
-    height: 100%;
-}
+
 
 #gradient-bg{
     background: linear-gradient(90deg, rgba(253,83,223,1) 0%, rgba(248,111,100,1) 100%);
-    background-size: cover;
+}
+
+#background{
+    background: url(../img/background.png) top center no-repeat;
+    background-attachment: cover;
 }
 
 label{

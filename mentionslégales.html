@@ -9,22 +9,26 @@
     <meta name="description" content="HTML">
     <title>Love Line Site de rencontre</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/logo.ico"/>
+    <link rel="icon" href="assets/img/logo.ico" />
 </head>
 
-<body>
+<body id="gradient-bg" class="vh-100 justify-content-center">
     <?php include("controllers/index_controller.php");?>
     <!--------------------------------------------------------------------------------------------------------------------------------------->
     <!-------------------------------------------------------FORMULAIRE---------------------------------------------------------------------->
     <!--------------------------------------------------------------------------------------------------------------------------------------->
-    <div id="gradient-bg" class="container-fluid text-white p-0 m-0 vw-100">
-        <div class="row">
+   <div class=" text-white mb-4">
+                <button type="button" class="btn text-white" id="button">Fermer x
+                </button>
+            </div>
+ <div class="container-fluid text-white p-0 m-0 vh-100">
+        <div class="row mx-auto">
             <header class="col-12 text-center">
-                <img src="assets/img/logowhite.png" id="logo" alt="logo Love Line">
+                <img src="assets/img/logowhite.png" id="logo" class="mt-3" alt="logo Love Line">
                 <h1>LOVE LINE</h1>
                 <h2 class="">Mentions légales </h2>
             </header>
-            <div class=" border border-white">
+            <div class="col-8 border border-white mx-auto p-5 m-5">
 
                 <ol>
                     <p>Conformément aux dispositions des articles 6-III-1 de la loi n°2004-575 du 21 juin 2004 pour la
@@ -109,11 +113,7 @@
                 </ol>
 
             </div>
-            <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-outline-light" id="button">Fermer x
-                </button>
-            </div>
-
+            
 
 
 

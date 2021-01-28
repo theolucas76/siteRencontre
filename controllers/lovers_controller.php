@@ -130,8 +130,7 @@
                                         <p><?= $description ?></p>
                                    </div>
                                    <div class="d-flex justify-content-end">
-                                   <button type="button" class="btn btn-outline-light" id="button" onclick="changeLike();"><span id="Like">Like</span><span id="Liked" style="display: none;">Liked</span>
-                                   </button>
+                                        <span id="btnLike" class="btn btn-outline-light btnCustom">Like</span>
                                    </div>
                               </div>
                          </div>

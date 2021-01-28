@@ -78,12 +78,11 @@ h2{
     color: white;
 }
 
-a{
-    color:white;
-    text-decoration: none;
+#mention{
+    color:white !important;
+    text-decoration: none !important;
 }
 
-a:hover{
-    color: white;
+#mention:hover{
+    color: white !important;
 }
-

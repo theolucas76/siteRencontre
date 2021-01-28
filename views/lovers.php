@@ -27,7 +27,7 @@
                                     <a class="nav-link text-white" href="#about1">Bienvenue <?= $_COOKIE['firstname']?></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#ourcard">Votre profil</a>
+                                    <a class="nav-link text-white" href="user.php">Votre profil</a>
                                 </li>
                             </ul>
                         </div>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 </div><footer class="mt-5">
-                <p class="text-center text-white">© Théo Lucas & Nora Charef La Manu 2020  <a href="../mentionslégales.html">mentions légales</a></p>
+                <p class="text-center text-white">© Théo Lucas & Nora Charef La Manu 2020  <a class="text-white" id="mention" href="../mentionslégales.html">mentions légales</a></p>
             </footer>
         </div></div> 
             </div>

@@ -37,7 +37,7 @@
           ],
         ['lastname' => 'Haba', 'firstname' => 'Bart', 'age' => '25', 'gender' => 'Homme', 'email' => 'barthaba@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb3.png', 'description' => 'J\'ai 25 ans j\'habite au Havre et je possède un bar tabac'],
 
-        ['lastname' => 'Tine', 'firstname' => 'Clément', 'age' => '26', 'gender' => 'Homme', 'email' => 'clementtine@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb4.png', 'description' => 'Je me présente je m\'appelle Clément et j\adore le orange et les fruits'],
+        ['lastname' => 'Tine', 'firstname' => 'Clément', 'age' => '26', 'gender' => 'Homme', 'email' => 'clementtine@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb4.png', 'description' => 'Je me présente je m\'appelle Clément et j\'adore le orange et les fruits'],
 
         ['lastname' => 'Gole', 'firstname' => 'Henri', 'age' => '32', 'gender' => 'Homme', 'email' => 'henrigole@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb5.png', 'description' => 'Je me présente je m\'appelle Henri, j\'aime beaucoup rigolé'],
 

@@ -1,8 +1,16 @@
-var btnArray = document.querySelectorAll('#btn');
+var btnArray = document.querySelectorAll('#btnLike');
+console.log(btnArray);
 btnArray.forEach(element => {
-    element.addEventListener('click', function () { 
-        element.innerHTML
-        document.getElementById('Liked').style.display = "block";
+    var bool= false;
+    element.addEventListener('click', function () {
+            if(bool == false){ 
+                element.innerHTML = "Liked";
+                bool= true;
+            }else{
+                element.innerHTML = "Like";
+                bool= false;
+            }
+            
         }
     )
     }

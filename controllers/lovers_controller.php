@@ -152,7 +152,7 @@
                if($key == 0){?>
                     <div class="carousel-item active">
                          <img src="../assets/img/<?= $photo ?>" class=" carouselImage img-fluid d-block w-100">
-                         <div class="carousel-caption d-none d-md-block">
+                         <div class="carousel-caption">
                               <h5><?=$firstname?>, <?=$age?></h5>
                               <button type="button" class="btn btn-outline-light" id="button"
                                                        data-bs-toggle="modal" data-bs-target="#<?= $firstname ?>">
@@ -164,7 +164,7 @@
                ?>
                <div class="carousel-item">
                     <img src="../assets/img/<?= $photo ?>" class=" carouselImage img-fluid d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                          <h5><?=$firstname?>, <?=$age?></h5>
                          <button type="button" class="btn btn-outline-light" id="button"
                                                     data-bs-toggle="modal" data-bs-target="#<?=$firstname?>">
@@ -176,18 +176,21 @@
                <div class="modal fade" id="<?=$firstname?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog text-white" role="document">
+                    
                          <div class="modal-content d-flex justify-content-center text-center p-5" id="gradient-bg">
+                              <a class="text-right justify-content-end btn btn-outline-light btnCustom" data-bs-dismiss="modal">x</a>
                               <div class="p-5 border border-white">
                                    <div class="row">
                                         <div class="col-md-6">
-                                             <img src="../assets/img/<?=$photo?>" class="d-block w-100">
+                                             <img src="../assets/img/<?=$photo?>" class="d-block img-fluid w-100">
                                         </div>
                                         <div class="col-md-6">
-                                             <img src="../assets/img/user.png" class="d-block w-100">
+                                             <a> </a>
+                                             <img src="../assets/img/user.png" class="d-block img-fluid w-100">
                                              <p><?= $firstname ?>, <?= $age ?> ans</p>
                                              <div class="row">
                                                   <div class="col-4">
-                                                       <img src="../assets/img/location.png" class="d-block w-100">
+                                                       <img src="../assets/img/location.png" class="d-block  img-fluid w-100">
                                                   </div>
                                                   <div class="col-8">
                                                        <p><?= $zipCode ?></p>
@@ -200,10 +203,7 @@
                                         <p><?= $description ?></p>
                                    </div>
                                    <div class="d-flex justify-content-end">
-                                             <button type="button" class="btn btn-outline-light btnCustom"  id="btn">
-                                                  <span id="Like">Like</span>
-                                                  <span id="Liked" style="display: none;">Liked</span>
-                                             </button>
+                                        <span id="btnLike" class="btn btn-outline-light btnCustom">Like</span>
                                    </div>
                               </div>
                          </div>

@@ -32,7 +32,7 @@
                                     <a class="nav-link text-white" href="">Bienvenue <?= $_COOKIE['firstname'] ?></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="">Nos célibataires</a>
+                                    <a class="nav-link text-white" href="lovers.php">Nos célibataires</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-white" href="../index.php" name="submitOut">Déconnexion</a>
@@ -42,31 +42,28 @@
                     </div>
                 </nav>
                 <div class="p-5 border border-white">
-                    <h2 class="text-center text-white mt-5 mb-5"><?= $_COOKIE['lastname']?> <?= $_COOKIE['firstname']?>, <?= $_COOKIE['age']?></h2>
+                    <h2 class="text-center text-white mt-5 mb-5"><?= $_COOKIE['lastname']?> <?= $_COOKIE['firstname']?></h2>
                     <div class="row d-flex justify-content-center">
                         <div class="col-3">
                             <img src="../assets/img/<?= $_COOKIE['profilPicture']?>" class="d-block align-items-left w-100">
                         </div>
-                        <p> description de la personne : </p>
-                        <p> </p>
+                        <p>Description : </p>
+                        <p><?=$_COOKIE['gender']?>, <?=$_COOKIE['age']?> ans</p>
+                        <p><?= $_COOKIE['email']?>, <?= $_COOKIE['zipCode']?></p>
+                        <p>Je recherche des <?= $_COOKIE['search'] ?></p>
                     </div>
 
-                    <div class="p-5">
-                        <button type="button" class="btn btn-outline-light" id="button">Fermer x
-                        </button>
-                    </div>
-                    <div class=" p-5 text-white">
-                        <a href="https://www.meetic.fr/"><button type="button" class="btn text-white" id="button"> Get my money
+                    <div class=" text-white">
+                        <a href="https://www.meetic.fr/" target="_blank"><button type="button" class="btn text-white" id="button"> Get my money
                         </button></a>
                     </div>
                 </div>   
-                <footer class="mt-5">
+                <footer class="">
         <p class="text-center">© Théo lucas & Nora Charef La Manu 2020  <a href="../mentionslégales.html">mentions légales</a></p>
     </footer>
             </div>
 
             <div class="col-5 m-0 p-0">
-
                 <img src="../assets/img/couple2.png" class="d-block align-items-left w-100" alt="photo d'un couple">
             </div>
         </div>

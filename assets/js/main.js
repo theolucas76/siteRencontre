@@ -14,3 +14,9 @@ btnArray.forEach(element => {
     )
     }
 );
+
+function changeView(){
+    console.log("ké pasa");
+    document.getElementById('gradient-bg').style.display = "none";
+    document.getElementById('background').style.display ="block";
+}

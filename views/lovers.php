@@ -8,10 +8,10 @@
     <link rel="icon" href="../assets/img/logo.ico" />
     </head>
     <body>
-    <div class="container-fluid m-0 p-0 vh-100" id="gradient-bg">
+    <div class="container-fluid m-0 p-0 vw-100" id="gradient-bg">
         <div class="row m-0 p-0 vw-100">
             <div class="col-md-5 m-0 p-0">
-                <img src="../assets/img/couple1.png" class="d-block align-items-left w-100 vh-100" alt="photo d'un couple">
+                <img src="../assets/img/couple1.png" class="d-block align-items-left w-100" alt="photo d'un couple">
             </div>
             <div class="col-md-7">
                 <nav class="navbar navbar-expand-lg navbar-dark">
@@ -33,12 +33,12 @@
                         </div>
                     </div>
                 </nav>
-                <div class= "row ">
-                <div class="col-10 border border-white m-5 justify-content-middle">
+                <div class= "row">
+                <div class="col-10 border border-white m-5 justify-content-middle mx-auto">
                     <h2 class="text-center text-white mt-5 mb-2">Nos célibataires</h2>
 
                     <div class="row d-flex justify-content-center my-3 text-white text-center mb-5" id="menProfiles">
-                        <div class="col-lg-5">
+                        <div class="col-lg-4">
                             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <?php include("../controllers/lovers_controller.php");?>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 </div><footer class="mt-5">
-                <p class="text-center text-white">© Théo Lucas & Nora Charef La Manu 2020  <a class="text-white" id="mention" href="../mentionslégales.html">mentions légales</a></p>
+                <p class="text-center text-white">© Théo Lucas & Nora Charef La Manu 2020  <a href="../mentionslégales.html">mentions légales</a></p>
             </footer>
         </div></div> 
             </div>

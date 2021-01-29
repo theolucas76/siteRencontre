@@ -10,12 +10,58 @@
         <link rel="icon" href="assets/img/logo.ico" />
     </head>
 
-    <body id="background" class="wh-100">
+    <body>
         <?php include("controllers/index_controller.php");?> 
+
+        <div id="gradient-bg" class="container-fluid text-white text-center m-0 p-0 vh-100">
+            <div class="row vw-100">
+                <header class="text-center">
+                    <img src="assets/img/logotext.png" id="logoline" alt="logo Love Line"
+                        class="mt-2 d-flex justify-content-start">
+                </header>
+                <div class="row justify-content-center ">
+                    <div class="col-10 border border-white m-5 p-5">
+                        <h2 class="mt-5 mb-5">Bienvenue sur votre site de rencontre en ligne </h2>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <form>
+                                    <button type="submit" class="btn border border-white text-white" onclick="changeView();">JE SOUHAITE
+                                            M'INSCRIRE ♡</button>
+                                    <div class="checkbox check-danger">
+                                        <input type="checkbox" class="form-check-input-majority"
+                                            name="form-check-input-majority" id="exampleCheck1" required>
+                                        <label class="form-check-label mt-5" for="exampleCheck1">J'atteste avoir + de 18 ans
+                                        </label>
+                                    </div>
+                                    <div class="checkbox check-danger">
+                                        <input type="checkbox" class="form-check-input-usage" name="form-check-input-usage" id="exampleCheck1"
+                                            required>
+                                        <label class="form-check-label" for="exampleCheck1">Je certifie avoir lu et accepté
+                                            les
+                                            Conditions Générales d'Utilisation du site et les Conditions
+                                            Particulières</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
         <!--------------------------------------------------------------------------------------------------------------------------------------->
         <!-------------------------------------------------------FORMULAIRE---------------------------------------------------------------------->
         <!--------------------------------------------------------------------------------------------------------------------------------------->
-        <div  class="container-fluid text-white justify-content-center">
+        <div id="background" class="container-fluid text-white justify-content-center vh-100">
             <div class="row">
                 <header class="col-12 text-center mt-3">
                     <img src="assets/img/logowhite.png" id="logo" alt="logo Love Line">
@@ -94,11 +140,11 @@
                 </form>
             </div>
             <footer class="mt-2">
-                <p class="text-center text-white">© Théo Lucas & Nora Charef La Manu 2020  <a href="mentionslégales.html">mentions légales</a></p>
+                <p class="text-center text-white">© Théo Lucas & Nora Charef La Manu 2020  <a href="mentionslégales.html" id="mention">mentions légales</a></p>
             </footer>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-        <script src="asset/js/main.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 
 </html>

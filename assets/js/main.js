@@ -1,5 +1,4 @@
 var btnArray = document.querySelectorAll('#btnLike');
-console.log(btnArray);
 btnArray.forEach(element => {
     var bool= false;
     element.addEventListener('click', function () {
@@ -15,3 +14,9 @@ btnArray.forEach(element => {
     )
     }
 );
+
+function changeView(){
+    console.log("ké pasa");
+    document.getElementById('gradient-bg').style.display = "none";
+    document.getElementById('background').style.display ="block";
+}

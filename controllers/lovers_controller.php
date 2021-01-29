@@ -17,27 +17,25 @@ if (isset($_POST['btnSubmit'])) {
 }
 
 $loversHomme = [
-     [
-          'lastname' => 'Jack',
-          'firstname' => 'Jacky',
-          'age' => '30',
-          'gender' => 'Homme',
-          'email' => 'jackylover@hotmail.fr',
-          'zipcode' => '76600',
-          'picture' => 'ppb1.png',
+     [    'lastname' => 'Jack', 
+          'firstname' => 'Jacky', 
+          'age' => '30', 
+          'gender' => 'Homme', 
+          'email' => 'jackylover@hotmail.fr', 
+          'zipcode' => '76600', 
+          'picture' => 'ppb1.png', 
           'description' => 'Je suis un homme de 30 ans nommé Jacky Jack, j\'adore dégusté de bonnes noix de saint-jacques qui fondent dans la bouche'
      ],
-     [
-          'lastname' => 'Terrieur',
+     [    'lastname' => 'Terrieur',
           'firstname' => 'Alain',
-          'age' => '45',
-          'gender' => 'Homme',
-          'email' => 'alainterrieur@hotmail.fr',
-          'zipcode' => '76600',
-          'picture' => 'ppb2.png',
+          'age' => '45', 
+          'gender' => 'Homme', 
+          'email' => 'alainterrieur@hotmail.fr', 
+          'zipcode' => '76600', 
+          'picture' => 'ppb2.png', 
           'description' => 'Alain Terrieur c\'est comme a l\'exterieur '
      ],
-     ['lastname' => 'Haba', 'firstname' => 'Bart', 'age' => '25', 'gender' => 'Homme', 'email' => 'barthaba@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb3.png', 'description' => 'J\'ai 25 ans j\'habite au Havre et je possède un bar tabac'],
+   ['lastname' => 'Haba', 'firstname' => 'Bart', 'age' => '25', 'gender' => 'Homme', 'email' => 'barthaba@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb3.png', 'description' => 'J\'ai 25 ans j\'habite au Havre et je possède un bar tabac'],
 
      ['lastname' => 'Tine', 'firstname' => 'Clément', 'age' => '26', 'gender' => 'Homme', 'email' => 'clementtine@hotmail.fr', 'zipcode' => '76600', 'picture' => 'ppb4.png', 'description' => 'Je me présente je m\'appelle Clément et j\adore le orange et les fruits'],
 
@@ -86,8 +84,8 @@ if ($_COOKIE['search'] == 'Femme') {
                     <img src="../assets/img/<?= $photo ?>" class=" carouselImage img-fluid d-block w-100">
                     <div class="carousel-caption d-none d-md-block">
                          <h5><?= $firstname ?>, <?= $age ?></h5>
-                         <button type="button" class="btn btn-outline-light" id="button" data-bs-toggle="modal" data-bs-target="#<?= $firstname ?>">
-                              Profil</button>
+                         <button type="button" class="btn btn-outline-light" id="button-card" data-bs-toggle="modal" data-bs-target="#<?= $firstname ?>">
+                              + d'infos </button>
                     </div>
                </div>
           <?php
@@ -97,8 +95,8 @@ if ($_COOKIE['search'] == 'Femme') {
                     <img src="../assets/img/<?= $photo ?>" class=" carouselImage img-fluid d-block w-100">
                     <div class="carousel-caption d-none d-md-block">
                          <h5><?= $firstname ?>, <?= $age ?></h5>
-                         <button type="button" class="btn btn-outline-light" id="button" data-bs-toggle="modal" data-bs-target="#<?= $firstname ?>">
-                              Profil</button>
+                         <button type="button" class="btn btn-outline-light" id="button-card" data-bs-toggle="modal" data-bs-target="#<?= $firstname ?>">
+                         + d'infos</button>
                     </div>
                </div>
           <?php } ?>
@@ -151,8 +149,8 @@ if ($_COOKIE['search'] == 'Femme') {
                     <img src="../assets/img/<?= $photo ?>" class=" carouselImage img-fluid d-block w-100">
                     <div class="carousel-caption">
                          <h5><?= $firstname ?>, <?= $age ?></h5>
-                         <button type="button" class="btn btn-outline-light" id="button" data-bs-toggle="modal" data-bs-target="#<?= $firstname ?>">
-                              Profil</button>
+                         <button type="button" class="btn btn-outline-light" id="button-card" data-bs-toggle="modal" data-bs-target="#<?= $firstname ?>">
+                              + d'infos </button>
                     </div>
                </div>
           <?php
@@ -162,8 +160,8 @@ if ($_COOKIE['search'] == 'Femme') {
                     <img src="../assets/img/<?= $photo ?>" class=" carouselImage img-fluid d-block w-100">
                     <div class="carousel-caption">
                          <h5><?= $firstname ?>, <?= $age ?></h5>
-                         <button type="button" class="btn btn-outline-light" id="button" data-bs-toggle="modal" data-bs-target="#<?= $firstname ?>">
-                              Profil</button>
+                         <button type="button" class="btn btn-outline-light" id="button-card" data-bs-toggle="modal" data-bs-target="#<?= $firstname ?>">
+                              + d'infos </button>
                     </div>
                </div>
           <?php } ?>

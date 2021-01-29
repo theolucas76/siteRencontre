@@ -12,8 +12,14 @@
     src: url("../fonts/Manrope-medium.otf") format("truetype");
 }
 
+body{
+    font-family: Manrope-Regular;
+    src: url("../fonts/Manrope-Regular.otf") format("truetype");
+}
 
-
+#logoline{
+    width: 300px;
+}
 #gradient-bg{
     background: linear-gradient(90deg, rgba(253,83,223,1) 0%, rgba(248,111,100,1) 100%);
 }
@@ -21,8 +27,8 @@
 #background{
     background: url(../img/background.png) top center no-repeat;
     background-attachment: cover;
+    display: none;
 }
-
 label{
         font-family: Manrope-Regular;
         src: url("../fonts/Manrope-Regular.otf") format("truetype");
@@ -80,15 +86,25 @@ h2{
     color: white;
 }
 
+#mention{
+    color:white !important;
+    text-decoration: none !important;
+}
+
+#mention:hover{
+    color: white !important;
+}
+
+.picto{
+    width: 30px;
+    height: 30px;
+}
+
 a{
     color:white;
-    text-decoration: none;
+    text-decoration: none ;
 }
 
 a:hover{
     color: white;
 }
- .picto{
-     width: 30px;
-     height: 30px;
- }

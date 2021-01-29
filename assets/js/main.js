@@ -16,7 +16,10 @@ btnArray.forEach(element => {
 );
 
 function changeView(){
-    console.log("ké pasa");
-    document.getElementById('gradient-bg').style.display = "none";
-    document.getElementById('background').style.display ="block";
+    var bool1 = document.getElementById("check1").checked;
+    var bool2 = document.getElementById("check2").checked;
+    if(bool1 == true && bool2 == true){
+        document.getElementById('door').style.display = "none";
+        document.getElementById('form').style.display ="block";
+    }
 }

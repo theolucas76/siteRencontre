@@ -115,7 +115,7 @@ if ($_COOKIE['search'] == 'Femme') {
                                              <h4><?= $firstname . " " . $lastname . " " . $age . " ans" ?></h4>
                                         </div>
                                         <div class="col-md-4 mx-auto d-flex justify-content-center text-center mt-1 mb-2">
-                                             <img src="../assets/img/location.png" class="picto">
+                                             <img src="../assets/img/location.png" style="width: 30px; height:30px;">
                                              <p><?= $zipCode ?></p>
                                         </div>
 
@@ -181,7 +181,7 @@ if ($_COOKIE['search'] == 'Femme') {
                                              <h4><?= $firstname . " " . $lastname . " " . $age . " ans" ?></h4>
                                         </div>
                                         <div class="col-md-4 mx-auto d-flex justify-content-center text-center mt-1 mb-2">
-                                             <img src="../assets/img/location.png" class="picto">
+                                             <img src="../assets/img/location.png" style="width:30px; height:30px;">
                                              <p><?= $zipCode ?></p>
                                         </div>
 
@@ -202,4 +202,3 @@ if ($_COOKIE['search'] == 'Femme') {
 <?php
 }
 ?>
-<script src="../assets/js/main.js"></script>

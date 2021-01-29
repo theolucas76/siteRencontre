@@ -125,7 +125,7 @@
                             <div class="form-group">
                                 <label for="female">Femme</label>
                                 <input type="radio" id="female" name="search" value="Femme">
-                                <label for="male">homme</label>
+                                <label for="male">Homme</label>
                                 <input type="radio" id="male" name="search" value="Homme" required>
                             </div>
                         </div>

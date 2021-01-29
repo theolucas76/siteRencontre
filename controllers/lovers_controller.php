@@ -82,7 +82,7 @@ if ($_COOKIE['search'] == 'Femme') {
           if ($key == 0) { ?>
                <div class="carousel-item active">
                     <img src="../assets/img/<?= $photo ?>" class=" carouselImage img-fluid d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                          <h5><?= $firstname ?>, <?= $age ?></h5>
                          <button type="button" class="btn btn-outline-light" id="button-card" data-bs-toggle="modal" data-bs-target="#<?= $firstname ?>">
                               + d'infos </button>
@@ -93,7 +93,7 @@ if ($_COOKIE['search'] == 'Femme') {
           ?>
                <div class="carousel-item">
                     <img src="../assets/img/<?= $photo ?>" class=" carouselImage img-fluid d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                          <h5><?= $firstname ?>, <?= $age ?></h5>
                          <button type="button" class="btn btn-outline-light" id="button-card" data-bs-toggle="modal" data-bs-target="#<?= $firstname ?>">
                          + d'infos</button>

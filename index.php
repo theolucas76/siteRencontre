@@ -25,7 +25,7 @@
 
                         <div class="row">
                             <div class="col-12">
-                                <form>
+                                <!--<form >-->
                                     <button type="submit" class="btn border border-white text-white" onclick="changeView();">JE SOUHAITE
                                             M'INSCRIRE ♡</button>
                                     <div class="checkbox check-danger">
@@ -40,7 +40,7 @@
                                             Conditions Générales d'Utilisation du site et les Conditions
                                             Particulières</label>
                                     </div>
-                                </form>
+                                <!--</form>-->
                             </div>
                         </div>
                     </div>

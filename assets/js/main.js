@@ -18,8 +18,14 @@ btnArray.forEach(element => {
 function changeView(){
     var bool1 = document.getElementById("check1").checked;
     var bool2 = document.getElementById("check2").checked;
+    alert(bool1 + '  '+ bool2);
     if(bool1 == true && bool2 == true){
+        alert(bool1 + '  '+ bool2);
         document.getElementById('door').style.display = "none";
         document.getElementById('form').style.display ="block";
+    }else{
+        alert(bool1 + '  '+ bool2);
+        document.getElementById('door').style.display = "block";
+        document.getElementById('form').style.display ="none";
     }
 }

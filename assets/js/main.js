@@ -26,3 +26,4 @@ function changeView(){
         document.getElementById('form').style.display ="none";
     }
 }
+

@@ -67,7 +67,7 @@
                     <h2 class="mb-4">Bienvenue sur votre site de rencontre en ligne </h2>
                 </header>
                 <div class="col-10 border border-white mx-auto">
-                <form method="post" action="views/lovers.php" enctype="multipart/form-data" class="p-5 " name="signIn">
+                <form method="post" action="views/lovers.php" enctype="multipart/form-data" class="p-5 mx-auto" name="signIn">
                     <div class="row mb-5">
                         <div class="col-md-4">
                             <div class="form-group">
@@ -124,9 +124,9 @@
                             <p>Vous recherchez</p>
                             <div class="form-group">
                                 <label for="female">Femme</label>
-                                <input type="radio" id="female" name="search" value="Femme">
+                                <input type="radio" id="female" name="search" value="Femmes">
                                 <label for="male">Homme</label>
-                                <input type="radio" id="male" name="search" value="Homme" required>
+                                <input type="radio" id="male" name="search" value="Hommes" required>
                             </div>
                         </div>
                         <div class="col-md-4 d-flex justify-content-center">
@@ -138,7 +138,7 @@
                 </form>
             </div>
             <footer class="mt-2">
-                <p class="text-center text-white">© Théo Lucas & Nora Charef La Manu 2020  <a href="mentionslégales.html" id="mention">mentions légales</a></p>
+                <p class="text-center text-white">© Théo Lucas & Nora Charef La Manu 2021  <a href="mentionslégales.html" id="mention">mentions légales</a></p>
             </footer>
         </div>
         <script src="assets/js/main.js"></script>

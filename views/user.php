@@ -51,7 +51,7 @@
                         </div>
                         <h4 class="m-2">Vos informations</h4>
                         <p><?=$_COOKIE['gender']?> <?=$_COOKIE['age']?> ans / <?= $_COOKIE['zipCode']?> <br><?= $_COOKIE['email']?> 
-                        <br>Je recherche un <?= $_COOKIE['search'] ?></p>
+                        <br>Je recherche des <?= $_COOKIE['search'] ?></p>
                     </div>
 
                     <div class=" text-white">
@@ -61,7 +61,7 @@
                 </div></div>
                 </div>   
                 <footer class="mt-5">
-        <p class="text-center">© Théo lucas & Nora Charef La Manu 2020  <a id="mention" href="../mentionslégales.html">mentions légales</a></p>
+        <p class="text-center">© Théo lucas & Nora Charef La Manu 2021  <a id="mention" href="../mentionslégales.html">mentions légales</a></p>
     </footer>
             </div>
 
@@ -73,7 +73,7 @@
  
     </div>
 
-
+    <script src="../assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>

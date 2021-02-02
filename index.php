@@ -19,7 +19,7 @@
                     <img src="assets/img/logotext.png" id="logoline" alt="logo Love Line"
                         class="mt-2 d-flex justify-content-start">
                 </header>
-                <div class="row justify-content-center ">
+                <div class="row justify-content-center mx-auto">
                     <div class="col-10 border border-white m-5 p-5">
                         <h2 class="mt-5 mb-5">Bienvenue sur votre site de rencontre en ligne </h2>
 
@@ -44,6 +44,9 @@
                             </div>
                         </div>
                     </div>
+                    <footer class="mt-2">
+                        <p class="text-center text-white">© Théo Lucas & Nora Charef La Manu 2021  <a href="mentionslégales.html" id="mention">mentions légales</a></p>
+                    </footer>
                 </div>
             </div>
         </div>

@@ -9,7 +9,6 @@ btnArray.forEach(element => {
                 element.innerHTML = "Like ♡";
                 bool= false;
             }
-            
         }
     )
     }
